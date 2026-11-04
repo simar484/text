@@ -1,0 +1,340 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101110;
+    color: #f4f4ed;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #191b19;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    color: white;
+}
+
+.logo span {
+    color: #c7f464;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c7f464;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    background:
+        linear-gradient(
+            90deg,
+            #101110 30%,
+            #101110dd 60%,
+            #10111088
+        ),
+        url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1400&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h3 {
+    color: #c7f464;
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 75px;
+    line-height: 0.95;
+    font-weight: 900;
+}
+
+.hero h1 span {
+    color: #c7f464;
+}
+
+.hero p {
+    color: #aaa;
+    margin: 25px 0;
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #c7f464;
+    color: #101110;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 1px solid #777;
+}
+
+/* Programs */
+
+.programs,
+.plans {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.programs h2,
+.plans h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.program-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.program-card {
+    background: #191b19;
+    padding: 40px 25px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.program-card:hover {
+    border-color: #c7f464;
+    transform: translateY(-8px);
+}
+
+.program-card h3 {
+    color: #c7f464;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.program-card p {
+    color: #aaa;
+    line-height: 1.7;
+}
+
+/* About */
+
+.about {
+    background: #191b19;
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 45px;
+    color: #c7f464;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    color: #aaa;
+    line-height: 1.8;
+}
+
+/* Plans */
+
+.plan-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.plan-card {
+    padding: 35px;
+    background: #191b19;
+    border: 1px solid #333;
+}
+
+.plan-card h3 {
+    font-size: 30px;
+    color: #c7f464;
+}
+
+.plan-card h2 {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.plan-card p {
+    margin: 15px 0;
+    color: #aaa;
+}
+
+.plan-card button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #c7f464;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.plan-card button:hover {
+    background: white;
+}
+
+.featured {
+    border: 2px solid #c7f464;
+}
+
+/* Contact */
+
+.contact {
+    padding: 80px 8%;
+    background: #191b19;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+    color: #c7f464;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+select,
+textarea {
+    padding: 15px;
+    background: #101110;
+    border: 1px solid #444;
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #c7f464;
+}
+
+form button {
+    padding: 15px;
+    background: #c7f464;
+    color: #101110;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: white;
+}
+
+#response {
+    color: #c7f464;
+    margin-top: 20px;
+}
+
+/* Footer */
+
+footer {
+    padding: 35px;
+    text-align: center;
+    background: #101110;
+    color: #aaa;
+}
+
+footer h3 {
+    color: #c7f464;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .program-container,
+    .plan-container {
+        grid-template-columns: 1fr;
+    }
+
+    .programs h2,
+    .plans h2,
+    .about h2,
+    .contact h2 {
+        font-size: 35px;
+    }
+}
